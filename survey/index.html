@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Test</title>
+    <script src="script.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        const config = {
+            apiKey: "AIzaSyAtBEAlA4WI0VDuhRB0f3zYpb6CoI6a_zE",
+            databaseURL: "https://agile-survey.firebaseio.com",
+            projectId: "agile-survey"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <style>
+        body {padding:10px 10px; margin:0 auto;font-size: calc(0.75em + 1vmin); font-family: "Arial";}
+        p{font-weight:bold;}
+        input{padding: 5px; margin-right:1em; font-size: calc(0.75em + 1vmin); }
+        input[type='number']{width:5em;}
+        input[type='text'].project-details {width:15em;}
+        input[type='radio']{vertical-align: top;}
+        label{font-size: calc(0.75em + 1vmin);}
+        input[type='submit']{margin:10px; width:7em; background-color:#4267b2;}
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <p></p>
+    <form name="test" class="pure-form pure-form-stacked">
+        <input type="text" name="project-name" class="project-details" placeholder="Project name" required /><br/>
+        <input type="text" name="project-product" class="project-details" placeholder="Project product" required/>
+        <input type="submit" name="submit" value="Get result" class="pure-button pure-button-primary"/>
+    </form>
+    <p><span id="result"></span></p>
+    <p><a href="results.html">All results</a></p>
+</body>
+</html>

@@ -1,4 +1,4 @@
-const questions = "http://aniksa.github.io/js/survey/data.json";
+const questions = "data.json";
 class DataRadio{
 	constructor(data, form){
 		//this.form = form;

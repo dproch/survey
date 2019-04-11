@@ -14,10 +14,11 @@
         };
         firebase.initializeApp(config);
     </script>
-    <style>
+   <style>
         body {padding:10px 10px; margin:0 auto;font-size: calc(0.75em + 1vmin); font-family: "Arial";}
         p{font-weight:bold;}
         input{padding: 5px; margin-right:1em; font-size: calc(0.75em + 1vmin); }
+        input:invalid{outline:1px dashed red;}
         input[type='number']{width:5em;}
         input[type='text'].project-details {width:15em;}
         input[type='radio']{vertical-align: top;}
